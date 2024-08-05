@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Decathlon City Center Almaza",
+    "address": "City Center Almaza Mall",
+    "city": "Almazah, 11775",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.450186681806!2d31.362450374633344!3d30.081290716825627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458163bc24fb73d%3A0xcf2a5cf82d4d8c80!2sDecathlon%20City%20Center%20Almaza!5e0!3m2!1sen!2sfr!4v1716371261640!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/89-city-center-almaza"
+  },
+  {
+    "name": "Decathlon Mall Of Arabia",
+    "address": "26th of July Corridor, Al Giza",
+    "city": "Giza, 12566",
+    "location": "Giza",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221119.73045096287!2d30.686101913452152!3d30.00827732088532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145857ec6ea4738d%3A0x4fc28c4e1afff4f6!2sDecathlon!5e0!3m2!1sen!2sfr!4v1716377178887!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/94-mall-of-arabia"
+  },
+  {
+    "name": "Decathlon Cairo Festival City",
+    "address": "Cairo Festival Mall, Cairo",
+    "city": "Cairo, 11835",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.3126185075516!2d31.404958974631178!3d30.027887919356715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cfd949bcd7f%3A0x61e2a2fa752a5701!2sDecathlon%20-%20Cairo%20Festival%20City%20Mall!5e0!3m2!1sen!2sfr!4v1716377322063!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/93-Cairo-festival-city"
+  },
+  {
+    "name": "Decathlon City Stars",
+    "address": "Masaken Al Mohandesin, Nasr City",
+    "city": "Nasr City, 11771",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7288556692893!2d31.34495537463296!3d30.07330571720441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f8564bfb139%3A0x69ec8deb89be04cd!2sDecathlon%20Citystars!5e0!3m2!1sen!2sfr!4v1716377521208!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/90-city-stars"
+  },
+  {
+    "name": "Decathlon Madinaty",
+    "address": "Open Air Mall Madinaty, Building F",
+    "city": "Cairo, 19519",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.5847324869915!2d31.6228166738767!3d30.106077260178036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581d43de775449%3A0xb976fc8668a34db3!2sDecathlon%20Madinaty!5e0!3m2!1sen!2sfr!4v1716377611040!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/96-madinaty"
+  },
+  {
+    "name": "Decathlon Maxim",
+    "address": "Maxim Mall 90 ST North, New Cairo",
+    "city": "Fifth Settlement, 11835",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.251380108268!2d31.493859374631086!3d30.02964521927338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14582393e57bd65d%3A0x341c11ee27f12f0a!2sDecathlon%20Maxim%20Mall!5e0!3m2!1sen!2sfr!4v1716377715121!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/95-maxim-mall"
+  },
+  {
+    "name": "Decathlon Green Plaza",
+    "address": "Green Plaza Mall, Sidi Gaber",
+    "city": "Alexandria, 21615",
+    "location": "Alexandria",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109199.45162283155!2d29.820039043359376!3d31.20734909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c534c5bbfe1f%3A0x712177519a4c62d0!2sDecathlon%20Green%20Plaza!5e0!3m2!1sen!2sfr!4v1716377796262!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/97-green-plaza"
+  },
+  {
+    "name": "Decathlon District 5",
+    "address": "District 5 Mall, Torah",
+    "city": "Cairo Governorate, 12345",
+    "location": "Cairo",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.8487696638194!2d31.446240946738023!3d29.955028310624552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145825342dbe0751%3A0x17d730dad0e12597!2sDecathlon%20District%205!5e0!3m2!1sen!2seg!4v1721289271459!5m2!1sen!2seg",
+    "detailsUrl": "https://www.decathlon.eg/en/content/168-district-5"
+  },
+  {
+    "name": "Decathlon Mall Of Egypt",
+    "address": "First 6th of October",
+    "city": "Giza Governorate, 12566",
+    "location": "Giza",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.2370038462714!2d31.01577911103431!3d29.972618074855436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585181fdefd2ff%3A0xf2f21d95a45c300f!2sDecathlon%20Mall%20of%20Egypt!5e0!3m2!1sen!2seg!4v1721289604469!5m2!1sen!2seg",
+    "detailsUrl": "https://www.decathlon.eg/en/content/167-mall-of-egypt"
+  }
+]
