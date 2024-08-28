@@ -127,7 +127,7 @@
     max-height: 100%;
   }
 
-  .showroom-prodcuts-wrapper {
+  .showroom-products-wrapper {
     box-sizing: border-box;
     margin: 0px;
     min-width: 0px;
@@ -445,7 +445,7 @@
         height: 223px;
         width: 100%;
     }
-    .showroom-prodcuts-wrapper{
+    .showroom-products-wrapper{
         padding-left: 0px;
         padding-right: 0px;
         height: 380px;
