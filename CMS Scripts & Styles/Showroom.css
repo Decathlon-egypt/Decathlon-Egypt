@@ -431,7 +431,7 @@
     align-items: flex-start;
   }
 
-  .showroom-title {
+  #showroom-title {
     letter-spacing: 0;
     text-transform: uppercase;
     font-weight: 800;
