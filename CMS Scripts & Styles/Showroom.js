@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const rightNoImageArrows = document.querySelectorAll(".right_no_image_arrow");
   const noImageTrackTranslations = Array(noImageTracks.length).fill(0);
 
-  const translateContainer = (track, index, amount, translations) => {
-    const displayWidth = window.innerWidth - 419;
+  const translateContainer = (track, index, amount, translations, offset) => {
+    const displayWidth = window.innerWidth - offset;
     const trackWidth = track.offsetWidth;
     const maxTranslateX = trackWidth - displayWidth;
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     arrow.addEventListener("click", () => {
       const track = tracks[index];
       const secondChildWidth = 261;
-      translateContainer(track, index, secondChildWidth, trackTranslations);
+      translateContainer(track, index, secondChildWidth, trackTranslations, 416);
     });
   });
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     arrow.addEventListener("click", () => {
       const track = tracks[index];
       const secondChildWidth = 261;
-      translateContainer(track, index, -secondChildWidth, trackTranslations);
+      translateContainer(track, index, -secondChildWidth, trackTranslations, 416);
     });
   });
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     arrow.addEventListener("click", () => {
       const track = noImageTracks[index];
       const secondChildWidth = 261;
-      translateContainer(track, index, secondChildWidth, noImageTrackTranslations);
+      translateContainer(track, index, secondChildWidth, noImageTrackTranslations, 91);
     });
   });
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     arrow.addEventListener("click", () => {
       const track = noImageTracks[index];
       const secondChildWidth = 261;
-      translateContainer(track, index, -secondChildWidth, noImageTrackTranslations);
+      translateContainer(track, index, -secondChildWidth, noImageTrackTranslations, 91);
     });
   });
 });
