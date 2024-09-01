@@ -423,6 +423,25 @@
     object-fit: cover;
   }
 
+  .showroom-heading {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.625rem;
+    align-items: flex-start;
+  }
+
+  .showroom-title {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.15;
+    padding-left: 2.625rem;
+    margin: 0;
+    margin-right: 30px;
+  }
+
   .component-container{
     margin: 24px 0px 32px 60px;
   }
