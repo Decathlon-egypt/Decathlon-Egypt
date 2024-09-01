@@ -22,6 +22,47 @@ const translateContainer = (track, index, amount) => {
   track.style.transition = "transform 0.5s ease";
 };
 
+document.addEventListener("DOMContentLoaded", function() {
+  const noImageTracks = document.querySelectorAll(".no-image-track");
+  const leftNoImageArrows = document.querySelectorAll(".left_no_image_arrow");
+  const rightNoImageArrows = document.querySelectorAll(".right_no_image_arrow");
+
+  const noImageTrackTranslations = Array(noImageTracks.length).fill(0);
+
+  const translateNoImageContainer = (track, index, amount) => {
+    const displayWidth = window.innerWidth;
+    const trackWidth = track.offsetWidth;
+    let maxTranslateX = trackWidth - displayWidth;
+
+    noImageTrackTranslations[index] += amount;
+
+    if (noImageTrackTranslations[index] >= 0) {
+      noImageTrackTranslations[index] = 0;
+    } else if (noImageTrackTranslations[index] < -maxTranslateX) {
+      noImageTrackTranslations[index] = -maxTranslateX;
+    }
+
+    track.style.transform = `translateX(${noImageTrackTranslations[index]}px)`;
+    track.style.transition = "transform 0.5s ease";
+  };
+
+  leftNoImageArrows.forEach((noImageArrow, index) => {
+    noImageArrow.addEventListener("click", () => {
+      const track = noImageTracks[index];
+      const secondChildWidth = 261;
+      translateNoImageContainer(track, index, secondChildWidth);
+    });
+  });
+
+  rightNoImageArrows.forEach((noImageArrow, index) => {
+    noImageArrow.addEventListener("click", () => {
+      const track = noImageTracks[index];
+      const secondChildWidth = 261;
+      translateNoImageContainer(track, index, -secondChildWidth);
+    });
+  });
+});
+  
 leftshowroom_arrows.forEach((showroom_arrow, index) => {
   showroom_arrow.addEventListener("click", () => {
     const track = tracks[index];
