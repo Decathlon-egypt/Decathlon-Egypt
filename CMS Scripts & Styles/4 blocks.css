@@ -19,6 +19,7 @@
 }
 
 .four_categories_title_container {
+  font-style: normal !important;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
