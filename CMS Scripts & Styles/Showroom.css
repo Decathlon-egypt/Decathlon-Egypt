@@ -425,6 +425,7 @@
   }
 
   .showroom-heading {
+    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0.625rem;
@@ -444,7 +445,7 @@
   }
 
   .component-container{
-    margin: 24px 0px 32px 60px;
+    margin: 0px 0px 32px 60px;
   }
 
   @media screen and (max-width: 768px) {
@@ -496,7 +497,7 @@
       display: block;
     }
     .component-container{
-        margin: 24px 0px 24px 24px;
+        margin: 5px 0px 24px 24px;
     }
     .showroom-products-container{
        gap: 12px;
