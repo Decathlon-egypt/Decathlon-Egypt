@@ -238,7 +238,9 @@
     padding: 7px 4px 0px 8px;
     font-family: "Roboto Condensed", sans-serif;
   }
-
+  .product-details-wrapper > * {
+    text-align: left;
+  }
   .product-price-wrapper {
     box-sizing: border-box;
     margin: 0px -4px 0px 0px;
