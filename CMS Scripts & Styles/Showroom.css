@@ -300,7 +300,7 @@
     line-height: 12px;
   }
 
-  .product-name {
+  .product-details-wrapper .product-name {
     height: 40px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
