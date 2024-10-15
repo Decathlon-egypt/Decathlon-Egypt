@@ -70,5 +70,13 @@
     "location": "Giza",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.2370038462714!2d31.01577911103431!3d29.972618074855436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585181fdefd2ff%3A0xf2f21d95a45c300f!2sDecathlon%20Mall%20of%20Egypt!5e0!3m2!1sen!2seg!4v1721289604469!5m2!1sen!2seg",
     "detailsUrl": "https://www.decathlon.eg/en/content/167-mall-of-egypt"
+  },
+  {
+    "name": "Decathlon City Center Alexandria",
+    "address": "Qetaa at Tarik as Sahrawi, Moharam Bek",
+    "city": "Alexandria, 5258730",
+    "location": "Alexandria",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1546.36584132441!2d29.929689364800087!3d31.170625724798843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDEwJzEzLjciTiAyOcKwNTUnNTEuMyJF!5e0!3m2!1sen!2sfr!4v1728996436173!5m2!1sen!2sfr",
+    "detailsUrl": "https://www.decathlon.eg/en/content/171-store-decathlon-mall-of-egypt"
   }
 ]
