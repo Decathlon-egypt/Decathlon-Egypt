@@ -1,9 +1,9 @@
 [
   {
-    "closingHours": 22,
-    "closingHoursText": "10:00 PM",
-    "closingHoursWeekEnd": 23,
-    "closingHoursTextWeekEnd": "11:00 PM",
+    "closingHour": 22,
+    "closingHourText": "10:00 PM",
+    "closingHourWeekEnd": 23,
+    "closingHourTextWeekEnd": "11:00 PM",
     "WorkingHours": "10:00 AM - 11:00 PM",
     "weekEndWorkingHours": "10:00 AM - 12:00 AM"
   }
