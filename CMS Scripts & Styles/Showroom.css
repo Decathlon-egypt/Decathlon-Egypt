@@ -515,9 +515,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    .product-details-wrapper .product-name {
-      height: 107px;
-    }
     .showroom-container {
       flex-direction: row;
       height: 477px;
@@ -540,6 +537,7 @@
       line-height: 24px;
     }
     .product-details-wrapper .product-name {
+      height: 107px;
       margin-top: 6px;
       font-size: 14px;
       line-height: 20px;
