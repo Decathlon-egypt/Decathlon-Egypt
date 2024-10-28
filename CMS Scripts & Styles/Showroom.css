@@ -451,6 +451,10 @@
     direction: ltr;
   }
 
+  .product-picture-wrapper > span > img{
+    width: 100%;
+  }
+  
   @media screen and (max-width: 768px) {
     .showroom_tile{
       display: none;
@@ -510,7 +514,10 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    .product-details-wrapper .product-name {
+      height: 107px;
+    }
     .showroom-container {
       flex-direction: row;
       height: 477px;
