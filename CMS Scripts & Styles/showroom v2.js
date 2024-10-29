@@ -100,7 +100,7 @@ document.addEventListener("alpine:init", () => {
         filters: filters
       }).then(({ hits }) => {
         handleLoadingSliders();
-        const filteredResultsManual = hits.filter((item) => item && item.stock.global);
+        const filteredResultsManual = hits.filter((item) => item);
         this.products = filteredResultsManual;
         this.updateGridStyle();
       }).catch(err => {
