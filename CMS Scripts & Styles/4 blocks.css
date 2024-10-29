@@ -42,8 +42,6 @@
 }
 
 .four_categories_image_wrapper {
-  height: auto;
-  max-width: 100%;
   background-color: transparent;
   border-style: none;
   border-radius: .75rem;
@@ -53,7 +51,10 @@
   display: flex;
   position: relative;
 }
-
+.four_categories_image_wrapper > img{
+  height: auto;
+  max-width: 100%;
+}
 /* Media queries in ascending order of min-width */
 @media (min-width: 425px) {
   .four_categories_container {
