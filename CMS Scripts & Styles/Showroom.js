@@ -87,6 +87,25 @@ document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     products: [],
     gridStyle: '',
+    getProductsFromCategory(prodCount, categoryNumber) {
+      const clientAlg = algoliasearch(
+        algoliaDetails.app_id,
+        algoliaDetails.api_search_key
+      );
+      const indexAlg = clientAlg.initIndex(algoliaDetails.index_name);
+      const query = categoryNumber; 
+      
+     indexAlg.search(query, {
+  filters: `category = ${categoryNumber} AND percentoff > 0`
+}).then(({ hits }) => {
+    handleLoadingSliders();
+        const filteredResultsByCategory = hits
+          .sort((a, b) => b.popularity - a.popularity)
+          .slice(0, prodCount);
+        
+        this.products = filteredResultsByCategory;
+      });
+    },
     getProductsManual(productsArr) {
       const clientAlg = algoliasearch(
         algoliaDetails.app_id,
