@@ -148,7 +148,7 @@
     white-space: nowrap;
     scrollbar-width: none;
     padding-left: 2px;
-    height: 477px;
+    height: auto;
     scroll-behavior: smooth;
   }
 
