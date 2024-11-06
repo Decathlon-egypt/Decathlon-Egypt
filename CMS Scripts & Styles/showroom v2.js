@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const algoliaDetails = {
-  app_id: algolia_user,
+  app_id: 'TR53CBEI82',
   api_search_key: "98ef65e220d8d74a2dfac7a67f1dba11",
   index_name: algolia_index,
 };
