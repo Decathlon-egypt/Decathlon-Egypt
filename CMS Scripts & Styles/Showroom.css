@@ -319,21 +319,19 @@
 
   .vp-button {
     width: 100%;
-    position: relative;
     appearance: none;
     cursor: pointer;
     align-items: center;
     align-self: center;
     background-color: #3643ba;
     border: 1px solid transparent;
-    border-radius: 0;
     box-sizing: border-box;
-    color: fff;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     padding: 12px 24px;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     transition: all 0.35s ease;
     gap: 8px;
     border-radius: 0;
@@ -427,7 +425,6 @@
   }
 
   .showroom-heading {
-    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0.625rem;
@@ -447,7 +444,7 @@
   }
 
   .component-container{
-    margin: 0px 0px 32px 60px;
+    margin: 0px 0px 20px 60px;
     direction: ltr;
   }
 
@@ -456,6 +453,9 @@
   }
   
   @media screen and (max-width: 768px) {
+    #showroom-title {
+      padding-left: 20px;
+    }
     .showroom_tile{
       display: none;
     }
