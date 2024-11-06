@@ -19,6 +19,7 @@
   align-items: center;
   height: auto !important;
   width: 375px;
+  margin-bottom: 20px;
 }
 
 .swiper-slide picture {
