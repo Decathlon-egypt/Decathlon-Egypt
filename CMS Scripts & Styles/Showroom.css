@@ -197,6 +197,10 @@
     position: relative;
   }
 
+  .showroom-prodcuts-wrapper {
+    position: relative;
+  }
+  
   .product-picture-wrapper span span {
     box-sizing: border-box;
     display: block;
