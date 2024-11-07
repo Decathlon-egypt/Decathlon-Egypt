@@ -64,7 +64,7 @@ const algoliaDetails = {
   const dynamic_index = locale === 'ar' ? 'prod_ar' : 'prod_en';
   app_id: 'TR53CBEI82',
   api_search_key: "98ef65e220d8d74a2dfac7a67f1dba11",
-  index_name: dynamic_index,
+  index_name: "prod_en",
 };
 
 function handleLoadingSliders() {
