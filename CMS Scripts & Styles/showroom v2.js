@@ -60,9 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const algoliaDetails = {
+  const locale = window.location.pathname.split('/')[1];
+  const dynamic_index = locale === 'ar' ? 'prod_ar' : 'prod_en';
   app_id: 'TR53CBEI82',
   api_search_key: "98ef65e220d8d74a2dfac7a67f1dba11",
-  index_name: algolia_index,
+  index_name: dynamic_index,
 };
 
 function handleLoadingSliders() {
