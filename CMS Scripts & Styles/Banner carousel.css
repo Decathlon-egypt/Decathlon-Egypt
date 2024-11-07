@@ -16,7 +16,7 @@ div:has(> .swiper-slide){
 }
 
 .swiper-wrapper{
-  margin: 0;
+  margin-bottom: 0 !important;
 }
 
 div:has(> .swiper-wrapper){
