@@ -11,6 +11,10 @@
   margin-bottom: 20px;
 }
 
+div:has(> .swiper-slide){
+  margin-bottom: 20px;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
