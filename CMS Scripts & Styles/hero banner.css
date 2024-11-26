@@ -13,6 +13,7 @@
   bottom: 0;
   left: 0;
   right: 0; 
+  overflow: hidden;
 }
 
 .hero-banner-text-wrapper{
@@ -87,6 +88,15 @@
     font-size: 40px;
     line-height: 1.11;
   }
+
+  .hero-banner-padding{
+    padding: 32px 0; 
+  }
+
+  .hero-banner-text-container{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 @media (min-width: 1200px){
@@ -97,5 +107,14 @@
   .hero-banner-title{
     font-size: 48px;
     line-height: 1.16;
+  }
+
+  .hero-banner-padding{
+    padding: 40px 0; 
+  }
+
+  .hero-banner-text-container{
+    margin-left: 64px;
+    margin-right: 64px;
   }
 }
