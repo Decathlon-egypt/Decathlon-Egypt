@@ -120,10 +120,6 @@ width: 100%;
     display: grid;
   }
   
-  .dual-panel-content{
-    width: 50%; 
-  }
-  
   .media-content{
     aspect-ratio: auto;
   }
