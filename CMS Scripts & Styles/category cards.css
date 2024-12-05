@@ -1,0 +1,121 @@
+.category_cards_title_wrapper{
+  margin-bottom: 4px;  
+}
+
+.category_cards_title{
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700; 
+}
+
+.category_cards_container{
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.category_card_container{
+  box-sizing: border-box;
+  margin: 0px 12px 0px 0px;
+  min-width: 0px;
+  text-align: center;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: center; 
+}
+
+.category_card_container:first-of-type {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}	
+
+.category_card_wrapper{
+  box-sizing: border-box;
+  margin: 0px;
+  display: block;
+  min-width: 418px;
+  min-height: 234px; 
+  aspect-ratio: 418 / 234;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.category_card_image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  color: transparent; 
+  transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+
+.category_card_wrapper:hover .category_card_image{
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 0px) {
+  .category_cards_wrapper {
+    margin: 24px 0px 20px 24px;
+  }
+  
+  .category_cards_title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .category_card_container{
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category_cards_wrapper {
+    margin: 24px 0px 32px 24px;
+  }
+  
+  .category_cards_title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .category_card_container{
+    margin-right: 24px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .category_cards_wrapper {
+    margin: 24px 40px 32px;
+  }
+  
+  .category_cards_title{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .category_card_container{
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {    
+  .category_cards_wrapper {
+    margin: 24px 80px 32px;
+  }
+  
+  .category_card_container{
+    margin-right: 24px;
+  }
+}
