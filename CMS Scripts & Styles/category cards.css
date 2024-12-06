@@ -22,6 +22,7 @@
   overflow-x: scroll;
   white-space: nowrap;
   scrollbar-width: none;
+  direction: ltr;
 }
 
 .category_card_container{
