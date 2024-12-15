@@ -63,6 +63,10 @@
     white-space: nowrap;
 }
 
+.store-details > div > a{
+    text-decoration: none;
+}
+
 .store-name {
     font-size: 16px;
     font-weight: 600;
