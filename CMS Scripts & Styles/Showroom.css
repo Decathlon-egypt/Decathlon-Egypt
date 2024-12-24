@@ -563,6 +563,7 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
+  pointer-events: auto !important;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
