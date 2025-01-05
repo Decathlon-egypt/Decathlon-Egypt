@@ -63,11 +63,11 @@ width: 100%;
   background-color: color-mix(in srgb, #ffffff 80%, #3643ba) 
 }
 
-.filled-button:hover {
+.blue-thm:hover {
     background-color: color-mix(in srgb, #3643ba 80%, #101010) !important;
 }
 
-.filled-button {
+.blue-thm {
     background-color: #3643ba !important;
     color: #FFF !important;
 }
