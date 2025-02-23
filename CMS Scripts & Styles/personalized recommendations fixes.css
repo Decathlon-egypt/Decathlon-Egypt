@@ -1,19 +1,17 @@
-<style>
-  .price{
-    grid-template-areas:
-        "primary secondary"
-        "primary tertiary"
-        "helper helper" !important;
-  }  
+.price{
+  grid-template-areas:
+      "primary secondary"
+      "primary tertiary"
+      "helper helper" !important;
+}  
 
-  .price_amount.-small{
-    padding: .125rem .5rem !important;
-    height: 2.5rem !important;
-  }
+.price_amount.-small{
+  padding: .125rem .5rem !important;
+  height: 2.5rem !important;
+}
 
-  .u-typo-body-s{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-</style>
+.u-typo-body-s{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
