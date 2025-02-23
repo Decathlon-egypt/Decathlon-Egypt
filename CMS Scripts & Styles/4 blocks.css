@@ -6,6 +6,7 @@
 }
 
 .four_categories_container {
+  margin-block-start: clamp(1.25rem, 1.0526rem + .8421vw, 2rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -19,14 +20,19 @@
 }
 
 .four_categories_title_container {
-  padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .four_categories_title_container > h2 {
   font-style: normal !important;
+}
+
+.four_categories_title{
+  font-size: clamp(1.375rem, 1.2105rem + 0.7018vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  padding-inline-end: 5rem;
 }
 
 .four_categories_box {
