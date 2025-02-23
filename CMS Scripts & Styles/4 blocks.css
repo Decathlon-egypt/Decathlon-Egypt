@@ -81,6 +81,16 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .four_categories_title_container {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .four_categories_title_container {
+    margin-left: 60px;
+  }
 }
 
 @media (min-width: 1024px) {
