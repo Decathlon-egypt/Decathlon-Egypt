@@ -90,6 +90,10 @@
       margin-top: 0.75rem;*/
     }
 
+    .icons-title {
+      margin: 0 40px;
+    }
+
     .icons-wrapper {
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
@@ -102,6 +106,12 @@
     .icon-subtitle {
       font-size: 1rem;
       max-width: 22ch;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .icons-title {
+      margin: 0 60px;
     }
   }
 </style>
