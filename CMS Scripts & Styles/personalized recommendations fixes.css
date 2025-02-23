@@ -19,3 +19,7 @@
 .price_discount{
   direction: ltr;
 }
+
+.product-shelf .scrollable_container{
+  gap: 1rem !important;
+}
