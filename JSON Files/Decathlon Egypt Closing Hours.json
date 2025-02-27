@@ -1,8 +1,8 @@
 [
   {
-    "closingHour": 0,
+    "closingHour": 22,
     "closingHourText": "4:30–7:30PM | Open until 12AM",
-    "closingHourWeekEnd": 1,
+    "closingHourWeekEnd": 23,
     "closingHourTextWeekEnd": "4:30–7:30PM | Open until 1AM",
     "WorkingHours": "10AM-4:30PM | 7:30PM-12AM",
     "weekEndWorkingHours": "10AM-4:30PM | 7:30PM-1AM"
