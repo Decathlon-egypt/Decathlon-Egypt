@@ -6,11 +6,5 @@
     "closingHourTextWeekEnd": "4:30–7:30PM | Open until 1AM",
     "WorkingHours": "10AM-4:30PM | 7:30PM-12AM",
     "weekEndWorkingHours": "10AM-4:30PM | 7:30PM-1AM"
-    "closingHourTemp": 22,
-    "closingHourTextTemp": "10:00 PM",
-    "closingHourWeekEndTemp": 23,
-    "closingHourTextWeekEndTemp": "11:00 PM",
-    "WorkingHoursTemp": "10:00 AM - 10:00 PM",
-    "weekEndWorkingHoursTemp": "10:00 AM - 11:00 PM"
   }
 ]
