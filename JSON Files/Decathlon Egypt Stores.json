@@ -17,7 +17,9 @@
       "closing1": "4:30 PM",
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Mall Of Arabia",
@@ -37,7 +39,9 @@
       "closing1": "4:00 PM",
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Cairo Festival City",
@@ -57,7 +61,9 @@
       "closing1": "4:30 PM",
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon City Stars",
@@ -77,7 +83,9 @@
       "closing1": "4:00 PM",
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Madinaty",
@@ -97,7 +105,9 @@
       "closing1": "4:30 PM",
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Maxim",
@@ -117,7 +127,9 @@
       "closing1": "4:00 PM",
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Green Plaza",
@@ -137,7 +149,9 @@
       "closing1": "4:30 PM",
       "opening2": "8:00 PM",
       "closing2": "1:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon District 5",
@@ -157,7 +171,9 @@
       "closing1": "4:00 PM",
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon Mall Of Egypt",
@@ -177,7 +193,9 @@
       "closing1": "4:00 PM",
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   },
   {
     "name": "Decathlon City Center Alexandria",
@@ -197,6 +215,8 @@
       "closing1": "4:30 PM",
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
-    }
+    },
+    "nextHourText": '',
+    "isOpen": false,
   }
 ]
