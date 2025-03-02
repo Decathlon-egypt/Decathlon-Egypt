@@ -18,8 +18,8 @@
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Mall Of Arabia",
@@ -40,8 +40,8 @@
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Cairo Festival City",
@@ -62,8 +62,8 @@
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon City Stars",
@@ -84,8 +84,8 @@
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Madinaty",
@@ -106,8 +106,8 @@
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Maxim",
@@ -128,8 +128,8 @@
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Green Plaza",
@@ -150,8 +150,8 @@
       "opening2": "8:00 PM",
       "closing2": "1:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon District 5",
@@ -172,8 +172,8 @@
       "opening2": "8:00 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon Mall Of Egypt",
@@ -194,8 +194,8 @@
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   },
   {
     "name": "Decathlon City Center Alexandria",
@@ -216,7 +216,7 @@
       "opening2": "7:30 PM",
       "closing2": "12:59 AM"
     },
-    "nextHourText": '',
-    "isOpen": false,
+    "nextHourText": null,
+    "isOpen": null,
   }
 ]
