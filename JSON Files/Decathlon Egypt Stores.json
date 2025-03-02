@@ -19,7 +19,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Mall Of Arabia",
@@ -41,7 +41,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Cairo Festival City",
@@ -63,7 +63,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon City Stars",
@@ -85,7 +85,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Madinaty",
@@ -107,7 +107,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Maxim",
@@ -129,7 +129,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Green Plaza",
@@ -151,7 +151,7 @@
       "closing2": "1:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon District 5",
@@ -173,7 +173,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon Mall Of Egypt",
@@ -195,7 +195,7 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   },
   {
     "name": "Decathlon City Center Alexandria",
@@ -217,6 +217,6 @@
       "closing2": "12:59 AM"
     },
     "nextHourText": null,
-    "isOpen": null,
+    "isOpen": null
   }
 ]
