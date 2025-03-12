@@ -111,7 +111,7 @@
     padding: 0px;
   }
 
-  .showroom-container > a > div > span .showroom-banner-image {
+  .showroom-banner-image {
     position: absolute;
     inset: 0px;
     box-sizing: border-box;
