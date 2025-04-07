@@ -10,7 +10,7 @@
   height: 2.5rem !important;
 }
 
-.u-typo-body-s{
+h2.u-typo-body-s{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
