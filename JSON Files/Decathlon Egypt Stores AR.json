@@ -8,15 +8,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/89-city-center-almaza",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -30,15 +30,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/94-mall-of-arabia",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -52,15 +52,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/93-Cairo-festival-city",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -74,15 +74,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/90-city-stars",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -96,15 +96,15 @@
     "detailsUrl": "https://www.decathlon.eg/en/content/96-madinaty",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -118,15 +118,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/95-maxim-mall",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -140,15 +140,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/97-green-plaza",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -162,15 +162,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/168-district-5",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -184,15 +184,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/167-mall-of-egypt",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
@@ -206,15 +206,15 @@
     "detailsUrl": "https://www.decathlon.eg/ar/content/171-Store-Decathlon-City-Center-Alexandria",
     "weekdays": {
       "opening1": "10:00 AM",
-      "closing1": "10:00 PM",
+      "closing1": "10:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "10:00 PM"
+      "closing2": "10:59 PM"
     },
     "weekend": {
       "opening1": "10:00 AM",
-      "closing1": "11:00 PM",
+      "closing1": "11:59 PM",
       "opening2": "10:00 AM",
-      "closing2": "11:00 PM"
+      "closing2": "11:59 PM"
     },
     "nextHourText": null,
     "isOpen": null
