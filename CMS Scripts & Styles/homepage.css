@@ -1,0 +1,19 @@
+.homepage-component {
+  margin: 0 auto;
+  padding: 1.5em 20px;
+  position: relative;
+  z-index: 2
+}
+
+
+@media (min-width:768px) {
+  .homepage-component {
+    padding: 1.5em 40px;
+  }
+} 
+
+@media (min-width:900px) {
+  .homepage-component {
+    padding: 1.5em 64px;
+  }
+} 
