@@ -1,0 +1,10 @@
+.horizontal-wrapper{
+  width: 100%;
+  display: flex;
+  margin-top: -20px;
+}
+
+.horizontal-wrapper-img{
+  width: 100%;
+  flex: 1;
+}
