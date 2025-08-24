@@ -30,7 +30,7 @@
         
     @media screen and (min-width: 900px) {
         #ZA_body_fix {
-             max-width: 1700px;
+             max-width: 2000px;
              margin: 1rem auto;
              padding: 0 max(10px, 2vw);
              padding: 0px !important;
@@ -38,7 +38,7 @@
       }
       @media screen and (min-width: 1700px) {
          #ZA_body_fix {
-             max-width: 1700px;
+             max-width: 2000px;
              margin: 1rem auto;
              padding: 0 max(10px, 2vw);
              padding: 0px !important;
