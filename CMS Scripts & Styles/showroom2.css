@@ -496,6 +496,9 @@
   .showroom_tile {
     display: none;
   }
+  #showroom-title {
+    margin: 0 40px;
+  }
   .showroom-container {
     flex-direction: column;
     height: unset;
@@ -552,6 +555,8 @@
   .showroom-container {
     flex-direction: row;
     height: 405px;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
   }
   .showroom-container-rtl {
     flex-direction: row-reverse;
@@ -617,4 +622,10 @@
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  #showroom-title {
+    margin: 0 60px;
+  }
 }
