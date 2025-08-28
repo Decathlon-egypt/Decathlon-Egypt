@@ -472,7 +472,7 @@
 }
 
 #showroom-title {
-  margin: 0 60px;
+  margin: 0 20px;
   color: rgb(16 16 16 / 1);
   font-style: normal !important;
   font-size: clamp(1.375rem, 1.2105rem + 0.7018vw, 2rem);
@@ -495,9 +495,6 @@
 @media screen and (max-width: 768px) {
   .showroom_tile {
     display: none;
-  }
-  #showroom-title {
-    margin: 0 40px;
   }
   .showroom-container {
     flex-direction: column;
@@ -557,6 +554,9 @@
     height: 405px;
     margin-bottom: 2rem;
     padding-left: 1.25rem;
+  }
+  #showroom-title {
+    margin: 0 40px;
   }
   .showroom-container-rtl {
     flex-direction: row-reverse;
@@ -624,7 +624,7 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) {
   #showroom-title {
     margin: 0 60px;
   }
