@@ -555,7 +555,7 @@
   .showroom-container {
     flex-direction: row;
     height: 405px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 2rem;
     padding-left: 1.25rem;
   }
   .showroom-container-rtl {
