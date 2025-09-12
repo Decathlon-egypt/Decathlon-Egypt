@@ -609,12 +609,14 @@
   font-weight: 800;
 }
 
-.left_showroom_arrow left_no_image_arrow {
+.left_showroom_arrow,
+.left_no_image_arrow {
   margin-left: 20px;
   left: 0;
 }
 
-.right_showroom_arrow right_no_image_arrow {
+.right_showroom_arrow,
+.right_no_image_arrow {
   margin-right: 15px;
   right: 0;
 }
