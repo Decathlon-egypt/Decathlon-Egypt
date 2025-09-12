@@ -621,6 +621,16 @@
   right: 0;
 }
 
+.left_showroom_arrow::after,
+.left_no_image_arrow::after {
+  content: "<";
+}
+
+.right_showroom_arrow::after,
+.right_no_image_arrow::after {
+  content: ">";
+}
+
 .disabled {
   pointer-events: none;
   opacity: 0.5;
