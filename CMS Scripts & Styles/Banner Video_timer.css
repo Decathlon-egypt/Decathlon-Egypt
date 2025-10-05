@@ -69,13 +69,9 @@
   }
   
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
+/* Banner component container - scoped styling */
+.banner-container {
     font-family: "DecathlonBrand", Arial, sans-serif;
     display: flex;
     justify-content: center;
