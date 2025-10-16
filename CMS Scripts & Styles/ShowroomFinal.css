@@ -762,6 +762,29 @@
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
+  /* Flip arrows when banner is on the RIGHT side */
+  .showroom-container-rtl .showroom-products-wrapper .left_showroom_arrow,
+  .showroom-container-rtl .showroom-products-wrapper .left_no_image_arrow {
+    left: auto;
+    right: calc(100% - 130px);
+  }
+
+  .showroom-container-rtl .showroom-products-wrapper .right_showroom_arrow,
+  .showroom-container-rtl .showroom-products-wrapper .right_no_image_arrow {
+    right: auto;
+    left: 60px;
+  }
+
+  .showroom-container-rtl .showroom-products-wrapper .left_showroom_arrow::after,
+  .showroom-container-rtl .showroom-products-wrapper .left_no_image_arrow::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  }
+
+  .showroom-container-rtl .showroom-products-wrapper .right_showroom_arrow::after,
+  .showroom-container-rtl .showroom-products-wrapper .right_no_image_arrow::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 18L9 12L15 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  }
+
   .disabled {
     pointer-events: none;
     opacity: 0.5;
