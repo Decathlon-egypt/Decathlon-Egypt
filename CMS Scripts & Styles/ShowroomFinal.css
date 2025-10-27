@@ -536,7 +536,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 768px) {
+  and (max-width: 768px) {
     .showroom_tile {
       display: none;
     }
@@ -551,7 +551,7 @@
       box-sizing: border-box;
       margin: 0px 0px 16px;
       min-width: 0px;
-      padding-right: 24px;
+      padding-right: 0px;
       cursor: pointer;
       height: 223px;
       width: 100%;
@@ -636,7 +636,7 @@
     }
 
     .component-container {
-      margin: 5px 0px 24px 24px;
+      margin: 5px 0px 24px 0px;
     }
 
     .showroom-products-container {
