@@ -536,7 +536,7 @@
     width: 100%;
   }
 
-  and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
     .showroom_tile {
       display: none;
     }
