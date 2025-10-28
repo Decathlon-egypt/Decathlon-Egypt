@@ -1,0 +1,89 @@
+/* Grid section */
+.grid-section {
+  padding-left: 8px;  /* horizontal padding */
+  padding-right: 8px; /* horizontal padding */
+  margin-bottom: 20px; /* space below the grid */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns, 1fr each */
+  gap: 16px; /* space between columns (and rows if wrapping) */
+  align-items: stretch;
+}
+
+.grid-item {
+  display: block;
+  position: relative;
+  height: 80px; /* fixed height */
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the tile while cropping overflow */
+  display: block;
+}
+
+/* Show desktop images by default, hide mobile images */
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+/* Responsive breakpoints */
+/* Mobile (default up to 599px) */
+@media (max-width: 599px) {
+  .grid-section {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 12px;
+  }
+  .grid-item { height: 80px; } /* same height on mobile */
+  
+  /* Switch to mobile images on mobile screens */
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .grid-section {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .grid-section {
+    padding-left: 12px;  /* reduced desktop padding */
+    padding-right: 12px;
+    max-width: 1280px;   /* center the content nicely */
+    margin: 0 auto 20px auto; /* preserve margin-bottom */
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+  }
+}
+
+/* Optional: hover affordance */
+.grid-item:hover img { filter: brightness(0.95); }
+
+
