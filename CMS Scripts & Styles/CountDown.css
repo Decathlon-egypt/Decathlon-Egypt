@@ -1,3 +1,19 @@
+/* Arabic - Janna LT Regular */
+@font-face {
+    font-family: 'JannaLT';
+    src: url('https://raw.githubusercontent.com/Decathlon-egypt/Decathlon-Egypt/main/Fonts/JannaLT/ArbFONTS-Janna-LT-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Arabic - Janna LT Bold */
+@font-face {
+    font-family: 'JannaLT';
+    src: url('https://raw.githubusercontent.com/Decathlon-egypt/Decathlon-Egypt/main/Fonts/JannaLT/Janna%20LT%20Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Decathlon Text Regular */
 @font-face {
     font-family: 'DecathlonText';
@@ -44,7 +60,7 @@
 
 ._main-deals_container {
     width: 100%;
-    background: #D72228;
+    background: #E90018;
     position: relative;
 }
 
@@ -112,7 +128,7 @@
 ._main-deals_left a {
     padding: 0.8rem 1.8rem;
     background: white;
-    color: #D72228 !important;
+    color: #E90018 !important;
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
@@ -146,6 +162,17 @@
 ._main-deals_wrapper {
     display: grid;
     grid-template-columns: 35% 65%;
+}
+
+/* RTL Support */
+[dir="rtl"] ._main-deals_wrapper {
+    direction: rtl;
+}
+
+[dir="rtl"] ._main-deals_left {
+    padding: 0.5rem 3.5rem 1rem 0;
+    text-align: right;
+    direction: rtl;
 }
 
 ._main-deals_counter_item p {
@@ -193,6 +220,12 @@
          padding: 1rem 1.5rem 1rem 2.5rem;
     }
 
+    [dir="rtl"] ._main-deals_left {
+        padding: 1rem 2.5rem 1rem 1.5rem;
+        text-align: right;
+        direction: rtl;
+    }
+
     ._main-deals_container h1 {
         font-size: 2rem;
     }
@@ -228,6 +261,12 @@
 
     ._main-deals_left {
         padding: 0.8rem 1rem 0.8rem 2rem;
+    }
+
+    [dir="rtl"] ._main-deals_left {
+        padding: 0.8rem 2rem 0.8rem 1rem;
+        text-align: right;
+        direction: rtl;
     }
 
     ._main-deals_container h1 {
@@ -277,6 +316,11 @@
         background: #E90018;
         text-align: center;
         justify-content: center;
+    }
+
+    [dir="rtl"] ._main-deals_left {
+        text-align: center;
+        direction: ltr;
     }
 
     ._main-deals_container h1 {
