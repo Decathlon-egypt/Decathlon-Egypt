@@ -524,12 +524,10 @@
   .component-container {
     margin: 0px 0px 20px 37px;
     direction: ltr;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .component-container:has(.no-image-track) {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .product-picture-wrapper>span>img {
@@ -537,6 +535,11 @@
   }
 
   @media screen and (max-width: 768px) {
+    #showroom-title {
+      white-space: normal;
+      min-width: 0;
+    }
+
     .showroom_tile {
       display: none;
     }
@@ -551,7 +554,6 @@
       box-sizing: border-box;
       margin: 0px 0px 16px;
       min-width: 0px;
-      padding-right: 24px;
       cursor: pointer;
       height: 223px;
       width: 100%;
