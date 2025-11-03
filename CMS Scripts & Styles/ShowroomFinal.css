@@ -545,7 +545,6 @@
     }
 
     .showroom-container {
-      padding: 0px 15px;
       flex-direction: column;
       height: unset;
     }
@@ -556,7 +555,7 @@
       margin: 0px 0px 16px;
       min-width: 0px;
       cursor: pointer;
-      height: 223px;
+      height: 245px;
       width: 100%;
     }
 
