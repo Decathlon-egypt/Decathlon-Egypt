@@ -509,7 +509,6 @@
     flex-wrap: wrap;
     padding-bottom: 0.625rem;
     align-items: flex-start;
-    min-height: 50px;
   }
 
   #showroom-title {
