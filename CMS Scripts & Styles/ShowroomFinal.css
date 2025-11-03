@@ -537,6 +537,7 @@
   @media screen and (max-width: 768px) {
     #showroom-title {
       white-space: normal;
+      overflow-wrap: anywhere;
       min-width: 0;
     }
 
