@@ -549,15 +549,27 @@
       height: unset;
     }
 
-    .showroom-banner-wrapper {
-      display: block;
-      box-sizing: border-box;
-      margin: 0px 0px 16px;
-      min-width: 0px;
-      cursor: pointer;
-      height: 245px;
-      width: 100%;
-    }
+      .showroom-banner-wrapper {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+    min-width: 0px;
+    cursor: pointer;
+    padding-top: 65.3646%;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .showroom-banner-wrapper>div {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
 
     .showroom-products-wrapper {
       padding-left: 0px;
