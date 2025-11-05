@@ -525,9 +525,6 @@
     direction: ltr;
   }
 
-  .component-container:has(.no-image-track) {
-    margin-left: 0px;
-  }
 
   .product-picture-wrapper>span>img {
     width: 100%;
