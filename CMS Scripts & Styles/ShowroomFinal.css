@@ -530,6 +530,53 @@
     width: 100%;
   }
 
+  /* Showroom Tabs Styles */
+
+  .showroom-buttons-list {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    position: relative;
+  }
+
+  .showroom-buttons-list li {
+    list-style: none;
+  }
+
+  .showroom-button {
+    padding: 0 15px;
+    height: 45px;
+    border-radius: 0.25rem;
+    background-color: white;
+    border: 1px solid lightgrey;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .showroom-button.active {
+    background-color: #3643ba;
+    color: white;
+  }
+
+  .showroom-button:hover {
+    background-color: #3643ba;
+    color: white;
+  }
+
+  .showroom-buttons-list:hover .showroom-button.active {
+    background-color: white;
+    color: black;
+  }
+
+  .showroom-buttons-list .showroom-button.active:hover {
+    background-color: #3643ba;
+    color: white;
+  }
+
   @media screen and (max-width: 768px) {
     #showroom-title {
       white-space: normal;
@@ -652,6 +699,26 @@
 
     .showroom-products-container {
       gap: 12px;
+    }
+
+    .all-sports-swiper-container {
+      margin-right: 0;
+      margin-top: 0;
+      padding-right: 0.625rem;
+    }
+
+    /* Showroom Tabs Mobile Styles */
+    .showroom-buttons-list {
+      flex-wrap: nowrap;
+      overflow: auto;
+      margin: 10px 0;
+    }
+
+    .showroom-button {
+      white-space: nowrap;
+      padding: 0 1rem;
+      height: 2.75rem;
+      font-size: 15px;
     }
   }
 
