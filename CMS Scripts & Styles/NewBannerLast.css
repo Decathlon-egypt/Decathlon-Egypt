@@ -554,11 +554,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
   z-index: 0;
+  background: #000;
+  display: block;
+}
+
+/* Prevent white screen on video load */
+#main-banner-slider .slide-video:not([src]) {
+  background: #000;
+}
+
+#main-banner-slider .swiper-slide:has(.slide-video) {
+  background: #000;
+}
+
+/* Ensure video continues playing when slide is active or visible */
+#main-banner-slider .swiper-slide-active .slide-video,
+#main-banner-slider .swiper-slide .slide-video {
+  pointer-events: auto;
+}
+
+#main-banner-slider .swiper-slide-active .slide-video {
+  display: block;
 }
 
 .image-gradient-overlay {
