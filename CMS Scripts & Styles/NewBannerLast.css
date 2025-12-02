@@ -1,3 +1,21 @@
+/* Custom Font Declarations */
+
+@font-face {
+  font-family: 'Decathlon Brand';
+  src: url('https://raw.githubusercontent.com/Decathlon-egypt/Decathlon-Egypt/main/Fonts/decathlon%20brand/Decathlon-Brand-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Janna LT';
+  src: url('https://raw.githubusercontent.com/Decathlon-egypt/Decathlon-Egypt/main/Fonts/JannaLT/Janna%20LT%20Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* IMG in ._promo-banner */
 
 ._promo-banner_right img {
@@ -575,6 +593,19 @@
   margin: 0 auto 10px;
   width: fit-content;
   font-weight: 600 !important;
+}
+
+/* Slide Title */
+
+#main-banner-slider .slide-title {
+  font-size: 30px;
+  letter-spacing: -.5px;
+  line-height: 1.16 !important;
+  text-align: center;
+  margin: 0;
+  font-weight: 600 !important;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .slide-title span {
