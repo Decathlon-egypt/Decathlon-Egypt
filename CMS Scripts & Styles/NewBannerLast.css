@@ -47,12 +47,19 @@
 
 ._promo-banner_left a {
   padding: .8rem 1rem;
-  background: white;
-  color: black !important;
+  background: #3643BA;
+  color: #fff !important;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   margin: 0 !important;
+  border-radius: 50px;
+  transition: background-color .2s, color .2s;
+}
+
+._promo-banner_left a:hover {
+  background: #fff;
+  color: #3643BA !important;
 }
 
 ._promo-banner_right {
@@ -157,11 +164,19 @@
   ._promo-banner_wrapper > a {
     display: block;
     padding: .8rem 1rem;
-    background: white;
-    color: black !important;
+    background: #3643BA;
+    color: #fff !important;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+    border-radius: 50px;
+    transition: background-color .2s, color .2s;
+  }
+
+  ._promo-banner_wrapper > ._promo-banner_buttons a:hover,
+  ._promo-banner_wrapper > a:hover {
+    background: #fff;
+    color: #3643BA !important;
   }
 
   ._promo-banner_wrapper {
@@ -321,27 +336,27 @@
 }
 
 #_middlebanner a {
-  background: white;
+  background: #3643BA;
   display: inline-block;
   width: fit-content;
   padding: .6rem 1rem;
-  color: #000;
+  color: #fff;
   text-align: center;
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0;
   text-decoration: none !important;
-  background-color: #fff;
-  transition: transform .2s, background-color .2s, color .2s;
+  transition: background-color .2s, color .2s;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid #3643BA;
 }
 
 #_middlebanner a:hover {
-  background: #e2e2e2;
-  transition: all 222ms;
+  background: #fff;
+  color: #3643BA !important;
+  border-color: #3643BA;
 }
 
 @media screen and (max-width: 1000px) {
@@ -459,8 +474,8 @@
 }
 
 ._main-content button {
-  background: var(--cms-c-blue);
-  color: var(--cms-c-white);
+  background: #3643BA;
+  color: #fff;
   padding: 8px 20px;
   font-size: 12px;
   margin-top: 14px;
@@ -468,11 +483,12 @@
   font-weight: 500;
   width: fit-content;
   text-transform: uppercase;
+  transition: background-color .2s, color .2s;
 }
 
 ._main-content button:hover {
-  background: var(--cms-c-dark-blue);
-  color: var(--cms-c-white) !important;
+  background: #fff;
+  color: #3643BA !important;
 }
 
 /* Slider Container Styles */
@@ -582,7 +598,7 @@
 }
 
 .slide-button {
-  background: #3643ba;
+  background: #3643BA;
   color: #fff;
   padding: 8px 16px;
   border: none;
@@ -591,19 +607,42 @@
   font-weight: 500;
   font-size: 12px !important;
   text-decoration: none;
+  transition: background-color .2s, color .2s;
+}
+
+.slide-button:hover {
+  background: #fff;
+  color: #3643BA !important;
 }
 
 .slide-button._red {
-  background: var(--cms-c-red);
+  background: #3643BA;
+  color: #fff;
+}
+
+.slide-button._red:hover {
+  background: #fff;
+  color: #3643BA !important;
 }
 
 .slide-button._black {
-  background: #000;
+  background: #3643BA;
+  color: #fff;
+}
+
+.slide-button._black:hover {
+  background: #fff;
+  color: #3643BA !important;
 }
 
 .slide-button._white {
-  background: var(--cms-c-white);
-  color: #000;
+  background: #3643BA;
+  color: #fff;
+}
+
+.slide-button._white:hover {
+  background: #fff;
+  color: #3643BA !important;
 }
 
 .slide-link-re {
