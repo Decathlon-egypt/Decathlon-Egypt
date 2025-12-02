@@ -1,0 +1,393 @@
+/* IMG in ._promo-banner */
+
+._promo-banner_right img {
+  width: 100%;
+}
+
+/* Main deals block */
+
+._promo-banner {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+._promo-banner_container {
+  width: 100%;
+  background: url('https://www.decathlon-source.eu/sk/assets/advent/advent-back.jpg');
+  position: relative;
+}
+
+._promo-banner_container h3 {
+  font-size: 3.2rem;
+  margin: 0;
+  color: white;
+  padding: 1rem 3rem;
+  font-weight: 700;
+}
+
+._promo-banner_bottom,
+._promo-banner_counter {
+  padding: 1rem 3rem;
+}
+
+._promo-banner_counter-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+._promo-banner_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+._promo-banner_left a {
+  padding: .8rem 1rem;
+  background: white;
+  color: black !important;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 !important;
+}
+
+._promo-banner_right {
+  display: flex;
+  align-items: center;
+}
+
+._promo-banner_wrapper {
+  display: grid;
+  grid-template-areas: "1 2";
+  background: #c22f2cbd;
+}
+
+._promo-banner_counter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+
+._promo-banner_counter_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+._promo-banner_counter_item p {
+  display: flex;
+  margin: 0;
+  padding: 6px;
+  background: white;
+  position: relative;
+  color: black;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  aspect-ratio: 1;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  transition: 333ms;
+}
+
+._promo-banner_counter_item p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #ffffff30;
+  left: 0;
+}
+
+._promo-banner_counter-wrap > p {
+  margin: 0;
+  font-size: 12px;
+}
+
+._promo-banner_buttons {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+._promo-banner_wrapper > ._promo-banner_buttons,
+._promo-banner_wrapper > a {
+  display: none;
+}
+
+/* Mobile (≤ 999px) */
+
+@media screen and (max-width: 999px) {
+  ._promo-banner_container h3 {
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+
+  ._promo-banner_counter_item p {
+    font-size: 24px;
+  }
+
+  ._promo-banner_left a {
+    margin-top: .5rem;
+    padding: .5rem .8rem;
+    font-size: 14px;
+  }
+
+  ._promo-banner_bottom,
+  ._promo-banner_container h3,
+  ._promo-banner_counter {
+    padding-bottom: .5rem;
+  }
+}
+
+/* Mobile (≤ 599px) */
+
+@media screen and (max-width: 599px) {
+  ._promo-banner_wrapper > ._promo-banner_buttons a,
+  ._promo-banner_wrapper > a {
+    display: block;
+    padding: .8rem 1rem;
+    background: white;
+    color: black !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  ._promo-banner_wrapper {
+    display: grid;
+    grid-template-areas: "1" "2";
+  }
+
+  ._promo-banner_wrapper > a {
+    margin: 1rem auto;
+  }
+
+  ._promo-banner_left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  ._promo-banner_counter {
+    padding: 1rem;
+  }
+
+  ._promo-banner_wrapper > ._promo-banner_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+/* Middle Banner Styles */
+
+#_middlebanner {
+  margin: 60px 0;
+  margin-top: 100px;
+  background: #3643ba;
+  position: relative;
+  padding-bottom: 0;
+}
+
+#_middlebanner::after {
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  background: #ffffff;
+}
+
+._middlebanner-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  justify-items: start;
+  height: calc(0.333 * 100vw);
+  max-height: 400px;
+  padding: 0 20px;
+}
+
+._middlebanner-left_inner {
+  position: absolute;
+  bottom: 0;
+}
+
+._middlebanner-left {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+._middlebanner-left_inner img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  ._middlebanner-left_inner img {
+    max-height: 350px;
+  }
+
+  ._middlebanner-inner {
+    grid-template-columns: 1fr 2fr;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  ._middlebanner-left_inner img {
+    box-sizing: border-box;
+    max-height: 400px;
+    padding: 0 1rem;
+  }
+
+  ._middlebanner-left_inner {
+    position: unset;
+    bottom: unset;
+  }
+
+  ._middlebanner-inner {
+    height: unset;
+    max-height: unset;
+    padding: unset;
+  }
+}
+
+._middlebanner-right {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+._middlebanner-right_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+#_middlebanner h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #7affa6;
+  margin: 0;
+}
+
+#_middlebanner p {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+#_middlebanner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#_middlebanner li {
+  color: white;
+  font-size: 14px;
+}
+
+#_middlebanner a {
+  background: white;
+  display: inline-block;
+  width: fit-content;
+  padding: .6rem 1rem;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-decoration: none !important;
+  background-color: #fff;
+  transition: transform .2s, background-color .2s, color .2s;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+#_middlebanner a:hover {
+  background: #e2e2e2;
+  transition: all 222ms;
+}
+
+@media screen and (max-width: 1000px) {
+  #_middlebanner h4 {
+    font-size: 22px;
+  }
+
+  #_middlebanner p {
+    font-size: 18px;
+  }
+
+  #_middlebanner li {
+    font-size: 14px;
+  }
+
+  #_middlebanner a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  ._middlebanner-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #_middlebanner {
+    margin-top: 40px;
+    padding-bottom: 0;
+    padding: 0;
+  }
+
+  ._middlebanner-inner {
+    gap: 0px;
+  }
+
+  ._middlebanner-right {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 20px;
+    justify-content: flex-start;
+  }
+
+  ._middlebanner-left {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
