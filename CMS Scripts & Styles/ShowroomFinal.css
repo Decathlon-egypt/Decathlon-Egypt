@@ -80,7 +80,7 @@
 
   .showroom-container {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 40px 0px 0px 0px;
     min-width: 0px;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@
 
   .showroom-products-wrapper {
     box-sizing: border-box;
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
     min-width: 0px;
     display: grid;
     position: relative;
