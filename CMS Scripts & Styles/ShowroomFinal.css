@@ -591,6 +591,7 @@
     .showroom-container {
       flex-direction: column;
       height: unset;
+      margin-top: 0;
     }
 
       .showroom-banner-wrapper {
