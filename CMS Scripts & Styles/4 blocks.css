@@ -106,3 +106,83 @@
     max-width: 1280px;
   }
 }
+
+/* Sports Swiper Styles */
+
+.sports-swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sports-swiper-container .swiper-wrapper {
+  display: flex;
+}
+
+.sports-swiper-container .swiper-slide {
+  flex-shrink: 0;
+  width: calc(25% - 15px);
+  margin-right: 20px;
+}
+
+.sports-swiper-container .four_categories_category_wrapper {
+  width: 100%;
+}
+
+/* Sports Swiper Button Positioning - Top Right like showrooms */
+
+.four_categories_wrapper .showroom-products-wrapper {
+  position: relative;
+}
+
+.four_categories_wrapper .sports-swiper-prev,
+.four_categories_wrapper .sports-swiper-next {
+  position: absolute;
+  top: -25px;
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: auto !important;
+  background: #fff;
+  border: 1px solid #949494;
+  border-radius: 50%;
+  width: 32px !important;
+  height: 32px !important;
+  margin-left: 0;
+  margin-right: 0;
+  display: none; /* Hidden by default, shown via JS when > 4 slides */
+}
+
+.four_categories_wrapper .sports-swiper-prev {
+  left: calc(100% - 130px);
+  right: auto;
+}
+
+.four_categories_wrapper .sports-swiper-prev::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 18L9 12L15 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.four_categories_wrapper .sports-swiper-next {
+  right: 60px;
+  left: auto;
+}
+
+.four_categories_wrapper .sports-swiper-next::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 1024px) {
+  .sports-swiper-container .swiper-slide {
+    width: calc(33.333% - 14px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sports-swiper-container .swiper-slide {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-swiper-container .swiper-slide {
+    width: calc(50% - 10px);
+  }
+}
