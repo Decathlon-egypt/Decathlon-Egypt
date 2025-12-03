@@ -80,7 +80,7 @@
 
   .showroom-container {
     box-sizing: border-box;
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
     min-width: 0px;
     display: flex;
     flex-direction: column;
@@ -591,7 +591,6 @@
     .showroom-container {
       flex-direction: column;
       height: unset;
-      margin-top: 0;
     }
 
       .showroom-banner-wrapper {
@@ -731,6 +730,10 @@
 
     .showroom-container-rtl {
       flex-direction: row-reverse;
+    }
+
+    .showroom-products-wrapper {
+      margin-top: 20px;
     }
 
     .showroom-banner-wrapper {
