@@ -154,6 +154,7 @@
     position: relative;
     padding-left: 27px;
     padding-right: 40px;
+    padding-top: 40px;
     height: auto;
   }
 
@@ -618,6 +619,7 @@
     .showroom-products-wrapper {
       padding-left: 0px;
       padding-right: 0px;
+      padding-top: 40px;
       height: auto;
     }
 
