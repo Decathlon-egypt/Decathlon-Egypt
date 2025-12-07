@@ -838,3 +838,70 @@
   }
 }
 
+/* Main Banner Slider Swiper Button Styles */
+
+#main-banner-slider .swiper-button-next,
+#main-banner-slider .swiper-button-prev {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+#main-banner-slider .swiper-button-next::after,
+#main-banner-slider .swiper-button-prev::after {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  content: "" !important;
+  font-size: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#main-banner-slider .swiper-button-next svg,
+#main-banner-slider .swiper-button-prev svg {
+  display: block !important;
+  position: relative !important;
+  z-index: 999 !important;
+  pointer-events: none;
+  color: #ffffff !important;
+}
+
+#main-banner-slider .swiper-button-next svg path,
+#main-banner-slider .swiper-button-prev svg path {
+  stroke: #ffffff !important;
+  fill: none !important;
+}
+
+/* RTL Support for Arabic Pages - Fix Arrow Directions */
+
+html[lang="ar"] #main-banner-slider .swiper-button-prev,
+html[lang^="ar"] #main-banner-slider .swiper-button-prev,
+[lang="ar"] #main-banner-slider .swiper-button-prev {
+  left: auto !important;
+  right: 10px !important;
+}
+
+html[lang="ar"] #main-banner-slider .swiper-button-next,
+html[lang^="ar"] #main-banner-slider .swiper-button-next,
+[lang="ar"] #main-banner-slider .swiper-button-next {
+  right: auto !important;
+  left: 10px !important;
+}
+
+html[lang="ar"] #main-banner-slider .swiper-container,
+html[lang^="ar"] #main-banner-slider .swiper-container,
+[lang="ar"] #main-banner-slider .swiper-container {
+  direction: rtl;
+}
+
+html[lang="ar"] #main-banner-slider .swiper-wrapper,
+html[lang^="ar"] #main-banner-slider .swiper-wrapper,
+[lang="ar"] #main-banner-slider .swiper-wrapper {
+  direction: rtl;
+}
+
