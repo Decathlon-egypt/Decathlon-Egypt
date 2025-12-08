@@ -20,11 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // Check if page is Arabic (RTL)
+  var isRTL = document.documentElement.lang === 'ar' || 
+              document.documentElement.lang.indexOf('ar') === 0 ||
+              document.documentElement.getAttribute('dir') === 'rtl' ||
+              document.body.getAttribute('dir') === 'rtl';
+
   // Only initialize swiper if there are more than 4 slides
   if (slides.length > 4) {
     var sportsSwiper = new Swiper('.sports-swiper-container', {
       slidesPerView: 4,
       spaceBetween: 20,
+      direction: isRTL ? 'rtl' : 'ltr',
       navigation: {
         nextEl: '.sports-swiper-next',
         prevEl: '.sports-swiper-prev',
