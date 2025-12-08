@@ -128,17 +128,10 @@
   width: 100%;
 }
 
-/* Sports Swiper Button Positioning - Top Right like showrooms */
-
-.four_categories_wrapper .showroom-products-wrapper {
-  position: relative;
-  padding-top: 40px;
-}
+/* Fix Sports Swiper Button Styles */
 
 .four_categories_wrapper .sports-swiper-prev,
-.four_categories_wrapper .sports-swiper-next,
-.four_categories_wrapper .swiper-button-prev.sports-swiper-prev,
-.four_categories_wrapper .swiper-button-next.sports-swiper-next {
+.four_categories_wrapper .sports-swiper-next {
   position: absolute !important;
   top: -25px !important;
   z-index: 1000 !important;
@@ -156,38 +149,47 @@
 }
 
 .four_categories_wrapper .sports-swiper-prev::after,
-.four_categories_wrapper .sports-swiper-next::after,
-.four_categories_wrapper .swiper-button-prev.sports-swiper-prev::after,
-.four_categories_wrapper .swiper-button-next.sports-swiper-next::after {
-  font-size: 10px !important;
-  color: #000000 !important;
-  font-weight: 800 !important;
-  width: 16px !important;
-  height: 16px !important;
+.four_categories_wrapper .sports-swiper-next::after {
+  font-size: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
   margin: 0 !important;
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  display: block !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
 }
 
-.four_categories_wrapper .sports-swiper-prev,
-.four_categories_wrapper .swiper-button-prev.sports-swiper-prev {
+.four_categories_wrapper .sports-swiper-prev {
   left: calc(100% - 130px) !important;
   right: auto !important;
 }
 
-.four_categories_wrapper .sports-swiper-prev::after,
-.four_categories_wrapper .swiper-button-prev.sports-swiper-prev::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 18L9 12L15 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+.four_categories_wrapper .sports-swiper-prev::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 18L9 12L15 6' stroke='%23949494' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  font-size: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  display: block !important;
 }
 
-.four_categories_wrapper .sports-swiper-next,
-.four_categories_wrapper .swiper-button-next.sports-swiper-next {
+.four_categories_wrapper .sports-swiper-next {
   right: 60px !important;
   left: auto !important;
 }
 
-.four_categories_wrapper .sports-swiper-next::after,
-.four_categories_wrapper .swiper-button-next.sports-swiper-next::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+.four_categories_wrapper .sports-swiper-next::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 18L15 12L9 6' stroke='%23949494' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  font-size: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  display: block !important;
+}
+
+.four_categories_wrapper .showroom-products-wrapper {
+  position: relative;
+  padding-top: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -205,5 +207,37 @@
 @media (max-width: 480px) {
   .sports-swiper-container .swiper-slide {
     width: calc(50% - 10px);
+  }
+}
+
+/* Mobile Styles - Hide buttons and enable swipe, show 2.5 blocks */
+
+@media screen and (max-width: 768px) {
+  .four_categories_wrapper .sports-swiper-prev,
+  .four_categories_wrapper .sports-swiper-next {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .four_categories_wrapper .showroom-products-wrapper {
+    padding-top: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .four_categories_wrapper .sports-swiper-container {
+    overflow: hidden !important;
+    touch-action: pan-x !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .four_categories_wrapper .sports-swiper-container .swiper-wrapper {
+    display: flex !important;
+  }
+
+  .four_categories_wrapper .sports-swiper-container .swiper-slide {
+    flex-shrink: 0 !important;
   }
 }
