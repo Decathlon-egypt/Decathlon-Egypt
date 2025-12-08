@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
           slidesPerView: 3,
         },
         480: {
-          slidesPerView: 2,
+          slidesPerView: 2.5,
         },
         0: {
-          slidesPerView: 2,
+          slidesPerView: 2.5,
         }
       }
     });
