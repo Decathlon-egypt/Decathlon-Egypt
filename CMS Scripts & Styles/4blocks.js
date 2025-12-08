@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var sportsSwiper = new Swiper('.sports-swiper-container', {
       slidesPerView: 4,
       spaceBetween: 20,
-      direction: isRTL ? 'rtl' : 'ltr',
+      direction: 'horizontal',
+      rtl: isRTL,
       navigation: {
         nextEl: '.sports-swiper-next',
         prevEl: '.sports-swiper-prev',

@@ -309,19 +309,7 @@ html[lang^="ar"] .four_categories_wrapper .sports-swiper-next::after,
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 18L9 12L15 6' stroke='%23949494' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
 }
 
-/* RTL Swiper Container */
-
-html[lang="ar"] .four_categories_wrapper .sports-swiper-container,
-html[lang^="ar"] .four_categories_wrapper .sports-swiper-container,
-[lang="ar"] .four_categories_wrapper .sports-swiper-container {
-  direction: rtl;
-}
-
-html[lang="ar"] .four_categories_wrapper .sports-swiper-container .swiper-wrapper,
-html[lang^="ar"] .four_categories_wrapper .sports-swiper-container .swiper-wrapper,
-[lang="ar"] .four_categories_wrapper .sports-swiper-container .swiper-wrapper {
-  direction: rtl;
-}
+/* RTL Swiper Container - Direction handled by Swiper.js, not CSS */
 
 /* RTL Support for Swiper Container Padding */
 html[lang="ar"] .four_categories_wrapper .sports-swiper-container,
