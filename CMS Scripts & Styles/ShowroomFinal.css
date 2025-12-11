@@ -983,30 +983,74 @@
   }
 
   /* Arabic Currency Replacement - Replace EGP with ج.م */
-  /* Add ج.م after price number */
+  /* Make price spans position relative for pseudo-elements */
+  html[lang="ar"] .product-details-wrapper .product-price,
+  html[lang^="ar"] .product-details-wrapper .product-price,
+  [lang="ar"] .product-details-wrapper .product-price,
+  html[lang="ar"] .product-details-wrapper .product-original-price,
+  html[lang^="ar"] .product-details-wrapper .product-original-price,
+  [lang="ar"] .product-details-wrapper .product-original-price {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Hide EGP text by covering it with a background overlay that matches the element's background */
+  html[lang="ar"] .product-details-wrapper .product-price::before,
+  html[lang^="ar"] .product-details-wrapper .product-price::before,
+  [lang="ar"] .product-details-wrapper .product-price::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px; /* Width to cover " EGP" text (approximately 4-5 characters with spacing) */
+    z-index: 1;
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+
+  /* For discounted price (red background #DC2626), use matching red overlay */
+  html[lang="ar"] .product-details-wrapper .product-price.discounted::before,
+  html[lang^="ar"] .product-details-wrapper .product-price.discounted::before,
+  [lang="ar"] .product-details-wrapper .product-price.discounted::before {
+    background-color: #DC2626 !important;
+  }
+
+  /* For regular price (yellow background #FFCD4E), use matching yellow overlay */
+  html[lang="ar"] .product-details-wrapper .product-price:not(.discounted)::before,
+  html[lang^="ar"] .product-details-wrapper .product-price:not(.discounted)::before,
+  [lang="ar"] .product-details-wrapper .product-price:not(.discounted)::before {
+    background-color: #FFCD4E !important;
+  }
+
+  /* For original price (no background, transparent), use white overlay to blend with page background */
+  html[lang="ar"] .product-details-wrapper .product-original-price::before,
+  html[lang^="ar"] .product-details-wrapper .product-original-price::before,
+  [lang="ar"] .product-details-wrapper .product-original-price::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px; /* Width to cover " EGP" text */
+    background-color: #ffffff !important; /* White background to hide EGP */
+    z-index: 1;
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+
+  /* Add ج.م after price number, positioned after the overlay */
   html[lang="ar"] .product-details-wrapper .product-price::after,
   html[lang^="ar"] .product-details-wrapper .product-price::after,
-  [lang="ar"] .product-details-wrapper .product-price::after {
+  [lang="ar"] .product-details-wrapper .product-price::after,
+  html[lang="ar"] .product-details-wrapper .product-original-price::after,
+  html[lang^="ar"] .product-details-wrapper .product-original-price::after,
+  [lang="ar"] .product-details-wrapper .product-original-price::after {
     content: " ج.م";
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
-  }
-
-  /* Hide EGP currency text if it appears in common patterns */
-  /* If EGP is in the price element itself, you may need JavaScript to replace it */
-  /* This targets common currency display patterns */
-  html[lang="ar"] .product-details-wrapper [class*="currency"],
-  html[lang^="ar"] .product-details-wrapper [class*="currency"],
-  [lang="ar"] .product-details-wrapper [class*="currency"],
-  html[lang="ar"] .product-details-wrapper [class*="egp"],
-  html[lang^="ar"] .product-details-wrapper [class*="egp"],
-  [lang="ar"] .product-details-wrapper [class*="egp"] {
-    font-size: 0 !important;
-    line-height: 0 !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    display: none !important;
+    position: relative;
+    z-index: 2;
+    margin-left: 0;
   }
 
   /* Mobile Arabic Text Alignment */
