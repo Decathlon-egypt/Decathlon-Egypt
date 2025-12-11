@@ -20,6 +20,44 @@
   // Inject styles immediately
   injectStyles();
 
+  // Create navigation buttons if they don't exist
+  function createNavigationButtons() {
+    var swiperContainer = document.querySelector('#main-banner-swiper');
+    if (!swiperContainer) {
+      return;
+    }
+
+    // Check if buttons already exist
+    var nextButton = swiperContainer.querySelector('.swiper-button-next');
+    var prevButton = swiperContainer.querySelector('.swiper-button-prev');
+    
+    if (!nextButton) {
+      // Create next button
+      nextButton = document.createElement('div');
+      nextButton.className = 'swiper-button-next';
+      nextButton.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #ffffff;"><path d="M9 18L15 12L9 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+      swiperContainer.appendChild(nextButton);
+    }
+
+    if (!prevButton) {
+      // Create prev button
+      prevButton = document.createElement('div');
+      prevButton.className = 'swiper-button-prev';
+      prevButton.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #ffffff;"><path d="M15 18L9 12L15 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>';
+      swiperContainer.appendChild(prevButton);
+    }
+
+    // Create notification span if it doesn't exist
+    var notification = swiperContainer.querySelector('.swiper-notification');
+    if (!notification) {
+      notification = document.createElement('span');
+      notification.className = 'swiper-notification';
+      notification.setAttribute('aria-live', 'assertive');
+      notification.setAttribute('aria-atomic', 'true');
+      swiperContainer.appendChild(notification);
+    }
+  }
+
   // Wait for DOM to be ready
   function initSwiper() {
     // Check if the swiper container exists
@@ -29,6 +67,9 @@
       setTimeout(initSwiper, 100);
       return;
     }
+
+    // Create navigation buttons if they don't exist
+    createNavigationButtons();
 
     // Initialize Swiper
     var mainBannerSwiper = new Swiper('#main-banner-swiper', {
