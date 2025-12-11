@@ -846,6 +846,11 @@
   background: transparent !important;
   border: 2px solid #ffffff !important;
   border-color: #ffffff !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin-top: 0 !important;
+  position: absolute !important;
+  z-index: 10 !important;
 }
 
 #main-banner-slider .swiper-button-next::after,
