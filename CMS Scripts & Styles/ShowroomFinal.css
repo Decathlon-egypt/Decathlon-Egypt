@@ -732,7 +732,7 @@
       flex-direction: row-reverse;
     }
 
-    .showroom-products-wrapper {
+     .showroom-products-wrapper {
       margin-top: 20px;
     }
 
@@ -948,4 +948,79 @@
   html[lang^="ar"] .swiper-wrapper,
   [lang="ar"] .swiper-wrapper {
     direction: rtl;
+  }
+
+  /* Arabic RTL Text Alignment */
+  html[lang="ar"] .product-details-wrapper > *,
+  html[lang^="ar"] .product-details-wrapper > *,
+  [lang="ar"] .product-details-wrapper > * {
+    text-align: right !important;
+  }
+
+  html[lang="ar"] .product-details-wrapper .product-name,
+  html[lang^="ar"] .product-details-wrapper .product-name,
+  [lang="ar"] .product-details-wrapper .product-name {
+    text-align: right !important;
+  }
+
+  html[lang="ar"] .product-details-wrapper .product-brand,
+  html[lang^="ar"] .product-details-wrapper .product-brand,
+  [lang="ar"] .product-details-wrapper .product-brand {
+    text-align: right !important;
+  }
+
+  html[lang="ar"] .product-details-wrapper .product-price-wrapper,
+  html[lang^="ar"] .product-details-wrapper .product-price-wrapper,
+  [lang="ar"] .product-details-wrapper .product-price-wrapper {
+    justify-content: flex-end !important;
+  }
+
+  html[lang="ar"] .product-details-wrapper .vp-price,
+  html[lang^="ar"] .product-details-wrapper .vp-price,
+  [lang="ar"] .product-details-wrapper .vp-price {
+    text-align: right !important;
+    direction: rtl;
+  }
+
+  /* Arabic Currency Replacement - Replace EGP with ج.م */
+  /* Add ج.م after price number */
+  html[lang="ar"] .product-details-wrapper .product-price::after,
+  html[lang^="ar"] .product-details-wrapper .product-price::after,
+  [lang="ar"] .product-details-wrapper .product-price::after {
+    content: " ج.م";
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  /* Hide EGP currency text if it appears in common patterns */
+  /* If EGP is in the price element itself, you may need JavaScript to replace it */
+  /* This targets common currency display patterns */
+  html[lang="ar"] .product-details-wrapper [class*="currency"],
+  html[lang^="ar"] .product-details-wrapper [class*="currency"],
+  [lang="ar"] .product-details-wrapper [class*="currency"],
+  html[lang="ar"] .product-details-wrapper [class*="egp"],
+  html[lang^="ar"] .product-details-wrapper [class*="egp"],
+  [lang="ar"] .product-details-wrapper [class*="egp"] {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  /* Mobile Arabic Text Alignment */
+  @media screen and (max-width: 768px) {
+    html[lang="ar"] .product-details-wrapper .product-price:not(.discounted) + .product-original-price,
+    html[lang^="ar"] .product-details-wrapper .product-price:not(.discounted) + .product-original-price,
+    [lang="ar"] .product-details-wrapper .product-price:not(.discounted) + .product-original-price {
+      text-align: right !important;
+    }
+
+    html[lang="ar"] .product-details-wrapper .vp-price,
+    html[lang^="ar"] .product-details-wrapper .vp-price,
+    [lang="ar"] .product-details-wrapper .vp-price {
+      text-align: right !important;
+      align-items: flex-end !important;
+    }
   }
