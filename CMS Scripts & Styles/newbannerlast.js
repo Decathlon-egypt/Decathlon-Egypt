@@ -13,12 +13,20 @@
 
     var style = document.createElement('style');
     style.id = 'main-banner-slider-styles';
-    style.textContent = '#main-banner-slider .swiper-button-next, #main-banner-slider .swiper-button-prev { background-color: transparent !important; background: transparent !important; border: 2px solid #ffffff !important; border-color: #ffffff !important; width: 44px !important; height: 44px !important; margin-top: 0 !important; position: absolute !important; z-index: 10 !important; } #main-banner-slider .swiper-button-next::after, #main-banner-slider .swiper-button-prev::after { display: none !important; visibility: hidden !important; opacity: 0 !important; content: "" !important; font-size: 0 !important; width: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; padding: 0 !important; } #main-banner-slider .swiper-button-next svg, #main-banner-slider .swiper-button-prev svg { display: block !important; position: relative !important; z-index: 999 !important; pointer-events: none; color: #ffffff !important; } #main-banner-slider .swiper-button-next svg path, #main-banner-slider .swiper-button-prev svg path { stroke: #ffffff !important; fill: none !important; }';
+    style.textContent = '#main-banner-slider .swiper-button-next, #main-banner-slider .swiper-button-prev { background-color: transparent !important; background: transparent !important; border: 2px solid #ffffff !important; border-color: #ffffff !important; width: 44px !important; height: 44px !important; margin-top: 0 !important; position: absolute !important; z-index: 10 !important; top: 50% !important; transform: translateY(-50%) !important; cursor: pointer !important; border-radius: 50% !important; } #main-banner-slider .swiper-button-next { right: 10px !important; left: auto !important; } #main-banner-slider .swiper-button-prev { left: 10px !important; right: auto !important; } #main-banner-slider .swiper-button-next::after, #main-banner-slider .swiper-button-prev::after { display: none !important; visibility: hidden !important; opacity: 0 !important; content: "" !important; font-size: 0 !important; width: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; padding: 0 !important; } #main-banner-slider .swiper-button-next svg, #main-banner-slider .swiper-button-prev svg { display: block !important; position: relative !important; z-index: 999 !important; pointer-events: none; color: #ffffff !important; } #main-banner-slider .swiper-button-next svg path, #main-banner-slider .swiper-button-prev svg path { stroke: #ffffff !important; fill: none !important; }';
     document.head.appendChild(style);
   }
 
   // Inject styles immediately
   injectStyles();
+
+  // Try to create buttons immediately
+  function tryCreateButtons() {
+    var swiperContainer = document.querySelector('#main-banner-swiper');
+    if (swiperContainer) {
+      createNavigationButtons();
+    }
+  }
 
   // Create navigation buttons if they don't exist
   function createNavigationButtons() {
@@ -68,8 +76,14 @@
       return;
     }
 
-    // Create navigation buttons if they don't exist
+    // Create navigation buttons if they don't exist (must be before Swiper init)
     createNavigationButtons();
+
+    // Check if Swiper is already initialized
+    if (swiperContainer.swiper) {
+      // Swiper already initialized, just update navigation
+      return;
+    }
 
     // Initialize Swiper
     var mainBannerSwiper = new Swiper('#main-banner-swiper', {
@@ -81,8 +95,8 @@
         disableOnInteraction: false,
       },
       navigation: {
-        nextEl: '#main-banner-slider .swiper-button-next',
-        prevEl: '#main-banner-slider .swiper-button-prev',
+        nextEl: swiperContainer.querySelector('.swiper-button-next'),
+        prevEl: swiperContainer.querySelector('.swiper-button-prev'),
       },
       breakpoints: {
         1280: { slidesPerView: 3 },
@@ -96,15 +110,32 @@
     });
   }
 
+  // Try to create buttons immediately and on DOM ready
+  tryCreateButtons();
+  
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSwiper);
+    document.addEventListener('DOMContentLoaded', function() {
+      tryCreateButtons();
+      initSwiper();
+    });
   } else {
+    tryCreateButtons();
     initSwiper();
   }
 
   // Also try after a delay for dynamically loaded content
-  setTimeout(initSwiper, 500);
-  setTimeout(initSwiper, 1000);
+  setTimeout(function() {
+    tryCreateButtons();
+    initSwiper();
+  }, 100);
+  setTimeout(function() {
+    tryCreateButtons();
+    initSwiper();
+  }, 500);
+  setTimeout(function() {
+    tryCreateButtons();
+    initSwiper();
+  }, 1000);
 })();
 
