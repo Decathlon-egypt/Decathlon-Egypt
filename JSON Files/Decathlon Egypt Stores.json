@@ -58,7 +58,7 @@
     },
     "weekend": {
       "opening1": "9:00 AM",
-      "closing1": "4:30 PM",
+      "closing1": "10:00 PM",
       "opening2": "9:00 AM",
       "closing2": "10:00 PM"
     },
@@ -79,9 +79,9 @@
       "closing2": "9:00 PM"
     },
     "weekend": {
-      "opening1": "0:00 AM",
+      "opening1": "10:00 AM",
       "closing1": "10:00 PM",
-      "opening2": "9:00 AM",
+      "opening2": "10:00 AM",
       "closing2": "10:00 PM"
     },
     "nextHourText": null,
@@ -103,7 +103,7 @@
     "weekend": {
       "opening1": "9:00 AM",
       "closing1": "10:00 PM",
-      "opening2": "9:00 PM",
+      "opening2": "9:00 AM",
       "closing2": "10:00 PM"
     },
     "nextHourText": null,
